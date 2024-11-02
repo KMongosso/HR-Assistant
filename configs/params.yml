@@ -1,0 +1,9 @@
+document_path: "data/documents/nestle_hr_policy.pdf"
+
+embedding_path: "data/embeddings/"
+
+llm_model_name: "gpt-3.5-turbo"
+
+text_splitter_chunk_size: 200
+text_splitter_chunk_overlap: 0
+text_splitter_separators: [".\n", ". "]
