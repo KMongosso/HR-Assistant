@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "hr-assistant"
+version = "0.1.0"
+description = "Virtual Human Ressource assistant leveraging RAG to provide company specific information"
+repository = "https://github.com/KMongosso/HR-Assistant"
+authors = ["Karl Mongosso <karl.mongosso@gmail.com>"]
+packages = [
+    { include = "hr_assistant", from = "src" },
+]
+license = "Proprietary"
+readme = "README.md"
+
+# DEPENDENCIES
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyter = "^1.1.1"
+langchain = "^0.3.7"
+langchain-community = "^0.3.5"
+pypdf = "^5.1.0"
+openai = "^1.53.0"
+chromadb = "^0.5.17"
+tiktoken = "^0.8.0"
+
+[tool.poetry.group.checkers.dependencies]
+bandit = "^1.7.8"
+black = "^22.10.0"
+isort = "^5.10.1"
+coverage = "^6.5.0"
+mypy = "1.10.0"
+pandera = "^0.13.4"
+pylint = "^3.2.3"
+pytest = "^7.1.3"
+pytest-cov = "^4.0.0"
+pytest-xdist = "^3.0.2"
+pytest-mock = "^3.14.0"
