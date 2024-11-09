@@ -23,3 +23,5 @@ check-coverage:
 
 checks: check-code-quality check-coverage
 
+run:
+	poetry run hr-assistant
